@@ -41,7 +41,8 @@ def word2vec(seqs, window_size=1):
             loss = criterion(y_pred, y)
             loss.backward()
             optimizer.step()
-            print(loss)
+            break
+        break
 
 
 if __name__ == '__main__':
